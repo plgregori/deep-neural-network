@@ -334,5 +334,5 @@ image = image.reshape((1, num_px * num_px * 3)).T
 my_predicted_image = predict(image, my_label_y, parameters)
 
 print ("y = " + str(np.squeeze(my_predicted_image)) + ", your L-layer model predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
-plt.title("Your 4-layer model predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
+plt.title("Your 4-layer model predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.", fontdict = {'fontsize' : 25})
 plt.show()
